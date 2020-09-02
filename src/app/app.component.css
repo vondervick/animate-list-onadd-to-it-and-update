@@ -1,0 +1,30 @@
+.items {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  background-color: #f2f1fc;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  min-height: 30px
+}
+
+.item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.added{
+opacity: 0;
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 2;
+padding: 12px;
+left: 0
+}

@@ -1,0 +1,12 @@
+<button (click)="add()">Add list</button>
+<button (click)="update()">Update list</button>
+
+
+{{state}} - {{stateMessage}}
+
+<ul class="items">
+	<li class="item" (click)="remove(item)" *ngFor="let item of items">
+		<div class="added" [@listAnimation]>Added!</div>
+		<div>{{ item }}</div>
+	</li>
+</ul>
